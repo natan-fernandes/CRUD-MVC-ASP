@@ -6,3 +6,4 @@ ASP.NET MVC e banco de dados.
 - Visual Studio
 - SQL Server
 - Entity Framework (Code first)
+- Razor
