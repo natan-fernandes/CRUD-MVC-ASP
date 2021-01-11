@@ -1,71 +1,159 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿body {
+    background-color: #f3f2f7;
 }
 
-/* Provide sufficient contrast against white background */
+thead {
+    padding-top: 20px;
+}
+
+th {
+    color: #76777c;
+    font-size: 11pt;
+}
+
+td {
+    color: #76777c;
+}
+
+table a {
+    color: #5c5d61;
+}
+
+    table a:hover {
+        color: #434447;
+    }
+
+.titulo {
+    padding-left: 2.5%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    background-color: #fff;
+    color: #76777c;
+    font-size: 12pt;
+}
+.subtitulo {
+    background-color: #fff;
+    color: #76777c;
+    font-size: 12pt;
+}
+
+label, input {
+    color: #76777c;
+}
+
+input {
+    border: 1px solid #76777c;
+}
+
+.separador {
+    border-top: 1px dashed #76777c;
+    opacity: 0.5;
+}
+
+.btn-cadastrar {
+    color: #fff;
+    background-color: #057e83;
+    font-size: 10pt;
+    margin-right: 2.5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.conteudo {
+    background-color: #fff;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+.itens {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.menu {
+    background-color: #2f4050;
+    min-height: calc(100vh);
+    overflow: hidden !important;
+}
+
+.avatar-div {
+    background-color: #212f3b;
+    padding-left: 15%;
+}
+
+.campo-email {
+    display: block;
+    font-size: 80%;
+    margin-top: -1%;
+    color: #506173;
+}
+
+.campo-nome {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+}
+
+.seta-randomiza-email:hover {
+    cursor: pointer;
+    color: #bababa;
+}
+
+.menu ul {
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+}
+
+    .menu ul li {
+        min-height: 50px;
+        padding-left: 10%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 11pt;
+    }
+
+        .menu ul li:hover {
+            background-color: #22303d !important;
+        }
+
+.foco {
+    background-color: #253442;
+    border-left: 4px solid #067c7d;
+    font-weight: 500;
+}
+
 a {
-  color: #0366d6;
+    color: #fff;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.situacao-1 {
+    padding: 5px;
+    background-color: #f25365;
+    color: #fff;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.situacao-2 {
+    padding: 5px;
+    background-color: #077d81;
+    color: #fff;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+.situacao-3 {
+    padding: 5px;
+    background-color: #d4d9df;
+    color: #76777c;
 }

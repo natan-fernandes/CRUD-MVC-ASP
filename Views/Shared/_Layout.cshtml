@@ -3,14 +3,47 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CRUD_MVC</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2">
+                <div class="sidebar">
+                    <div class="row avatar-div">
+                        <div class="text-left">
+                            <img class="mt-4 ml-1 w-25 rounded-circle img-fluid avatar-img" src="https://www.w3schools.com/howto/img_avatar.png" />
+                            <span class="campo-nome mt-2">@ViewData["NomeCliente"]<i class="fas fa-caret-down ml-2 seta-randomiza-email"></i></span>
+                            <span class="campo-email mb-4">@ViewData["EmailCliente"]</span>
+                        </div>
+                    </div>
+                    <div class="row menu">
+                        <ul>
+                            <li id="menu-produto" class="foco"><a asp-action="Index"><i class="fas fa-cube mr-2"></i>Produto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-md-10 pt-2 pl-0 pr-0">
+                <main role="main" class="pb-3">
+                    <h4 class="mt-4 titulo">@ViewData["Title"]</h4>
+                    <div class="conteudo">
+                        @RenderBody()
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="
+                 ">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CRUD_MVC</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,17 +62,12 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - CRUD_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

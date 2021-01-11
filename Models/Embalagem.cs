@@ -1,17 +1,30 @@
-﻿namespace CRUD_MVC.Models
+﻿using System;
+
+namespace CRUD_MVC.Models
 {
     public class Embalagem : IEmbalagem
     {
-        public Unidade Unidade { get; set; }
+        public long Id {get; set;}
+        public long IdUnidade { get; set; }
         public double FatorDeConversao { get; set; }
-        public SituacaoProdutoEmbalagem Situacao { get; set; }
+        public long IdSituacao { get; set; }
 
 
-        public Embalagem(Unidade unidade, double fatorDeConversao, SituacaoProdutoEmbalagem situacao)
+        /// <summary>
+        /// O EntityFramework precisa desse construtor vazio p/ criar os controladores
+        /// <para>Não utilize este construtor</para>
+        /// </summary>
+        [Obsolete]
+        public Embalagem() { }
+
+        /// <summary>
+        /// Construtor da classe Embalagem
+        /// </summary>
+        public Embalagem(long idUnidade, double fatorDeConversao, long idSituacao)
         {
-            this.Unidade = unidade;
+            this.IdUnidade = idUnidade;
             this.FatorDeConversao = fatorDeConversao;
-            this.Situacao = situacao;
+            this.IdSituacao = idSituacao;
         }
 
     }

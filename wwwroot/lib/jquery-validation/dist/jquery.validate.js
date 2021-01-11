@@ -279,7 +279,8 @@ $.extend( $.validator, {
 		errorElement: "label",
 		focusCleanup: false,
 		focusInvalid: true,
-		errorContainer: $( [] ),
+		error
+			: $([]),
 		errorLabelContainer: $( [] ),
 		onsubmit: true,
 		ignore: ":hidden",

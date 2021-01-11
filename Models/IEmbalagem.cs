@@ -2,8 +2,9 @@
 {
     interface IEmbalagem
     {
-        Unidade Unidade { get; set; }
+        long Id { get; set; }
+        long IdUnidade { get; set; }
         double FatorDeConversao { get; set; }
-        SituacaoProdutoEmbalagem Situacao { get; set; }
+        long IdSituacao { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CRUD_MVC.Models
 {
@@ -6,9 +7,13 @@ namespace CRUD_MVC.Models
     {
         long Codigo { get; set; }
         string Descricao { get; set; }
-        SituacaoProduto Situacao { get; set; }
-        Unidade Unidade { get; set; }
+        long IdSituacao { get; set; }
+        long IdUnidade { get; set; }
         double PesoLiquido { get; set; }
-        List<Embalagem>Embalagens { get; set; }
+
+        /// <summary>
+        /// Separado por virgulas
+        /// </summary>
+        string IdEmbalagens { get; set; }
     }
 }
