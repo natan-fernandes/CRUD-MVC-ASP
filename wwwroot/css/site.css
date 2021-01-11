@@ -66,6 +66,19 @@ input {
     margin-top: 2%;
 }
 
+.btn-add-embalagem {
+    background-color: #057e83 !important;
+    margin-top: 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.fundo-verde {
+    background-color: #057e83 !important;
+    color: #fff;
+}
+
 .itens {
     padding-left: 2%;
     padding-right: 2%;

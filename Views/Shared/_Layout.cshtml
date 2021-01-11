@@ -13,17 +13,19 @@
         <div class="row">
             <nav class="col-md-2">
                 <div class="sidebar">
-                    <div class="row avatar-div">
-                        <div class="text-left">
-                            <img class="mt-4 ml-1 w-25 rounded-circle img-fluid avatar-img" src="https://www.w3schools.com/howto/img_avatar.png" />
-                            <span class="campo-nome mt-2">@ViewData["NomeCliente"]<i class="fas fa-caret-down ml-2 seta-randomiza-email"></i></span>
-                            <span class="campo-email mb-4">@ViewData["EmailCliente"]</span>
+                    <div class="row">
+                        <div class="menu">
+                            <div class="row avatar-div">
+                                <div class="text-left">
+                                    <img class="mt-4 ml-1 w-25 rounded-circle img-fluid avatar-img" src="https://www.w3schools.com/howto/img_avatar.png" />
+                                    <span class="campo-nome mt-2">@ViewData["NomeCliente"]<i class="fas fa-caret-down ml-2 seta-randomiza-email"></i></span>
+                                    <span class="campo-email mb-4">@ViewData["EmailCliente"]</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li id="menu-produto" class="foco"><a asp-action="Index"><i class="fas fa-cube mr-2"></i>Produto</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="row menu">
-                        <ul>
-                            <li id="menu-produto" class="foco"><a asp-action="Index"><i class="fas fa-cube mr-2"></i>Produto</a></li>
-                        </ul>
                     </div>
                 </div>
             </nav>
@@ -37,37 +39,6 @@
             </div>
         </div>
     </div>
-
-
-    <!--
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="
-                 ">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CRUD_MVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container-fluid">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-    -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

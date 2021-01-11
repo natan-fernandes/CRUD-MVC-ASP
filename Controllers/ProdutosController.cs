@@ -39,6 +39,10 @@ namespace CRUD_MVC.Controllers
             MultipleTypesViewModel mymodel = new MultipleTypesViewModel();
             mymodel.Produto = await _context.Produtos.ToListAsync();
             mymodel.SituacaoProduto = await _context.DefSituacaoProduto.ToListAsync();
+            mymodel.SituacaoProdutoEmabalagem = await _context.DefSituacaoProdutoEmbalagem.ToListAsync();
+            mymodel.Unidade = await _context.DefUnidade.ToListAsync();
+            mymodel.Embalagem = await _context.Embalagens.ToListAsync();
+
             return View(mymodel);
             //return View(await _context.Produtos.ToListAsync());
         }
